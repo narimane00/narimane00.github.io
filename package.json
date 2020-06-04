@@ -3,7 +3,9 @@
     "name": "startbootstrap-resume",
     "version": "5.0.8",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+        "start": "node_modules/.bin/gulp watch",
+        "predeploy": "yarn run build",
+        "deploy": "gh-pages -d build"
     },
     "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
     "keywords": [
@@ -14,7 +16,8 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/resume",
+    "homepage":
+    "http://NarimaneHennouni.me",
     "bugs": {
         "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
         "email": "feedback@startbootstrap.com"
@@ -47,4 +50,5 @@
         "gulp-uglify": "3.0.2",
         "merge-stream": "2.0.0"
     }
+    
 }
